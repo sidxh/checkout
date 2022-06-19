@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siddhant's GDSC Challenge">
+  <meta name="keywords" content="html, css, flex, bem, responsive, form, material icons">
+  <meta name="author" content="Siddhant">
+  <title>Sid's Checkout Page</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="sidlogo.png" type="image/x-icon">
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+
+    <header class="header">
+      <h1 class="header__title">Checkout</h1>
+    </header>
+   
+    <form action="#" class="order-form">
+      
+      <div class="order-form__customer-info">
+        <section class="contact-info">
+          <h2 class="contact-info__heading">
+            Contact information
+          </h2>
+        
+          <label for="email" class="contact-info__sub-heading">E-mail</label>
+
+          <section class="contact-info__section">
+            <i class="material-icons contact-info__icon" id="email-icon">email</i>
+            <input type="email" class="contact-info__text" id="email" placeholder="Email Address" required>
+          </section> 
+                    
+        
+          <label for="phone" class="contact-info__sub-heading">phone</label>
+          <section class="contact-info__section">
+            <i class="material-icons contact-info__icon" id="phone-icon">phone</i>
+            <input type="phone" class="contact-info__text" id="phone" placeholder="Phone no." required>
+          </section>
+          
+        </section>
+        <section class="shipping-info">
+          <h2 class="shipping-info__heading">
+            Shipping Address
+          </h2>
+          
+          <label for="name" class="shipping-info__sub-heading">Full name</label>
+          <section class="shipping-info__section">
+            <i class="material-icons shipping-info__icon" id="name-icon">account_circle</i>
+            <input type="text" class="shipping-info__text" id="name" placeholder="Name" required>
+          </section>
+          
+          
+         
+          <label for="address" class="shipping-info__sub-heading">Address</label>
+          <section class="shipping-info__section">
+            <i class="material-icons shipping-info__icon" id="address-icon">home</i>
+            <input type="text" class="shipping-info__text address" id="address" placeholder="Address" required>
+          </section> 
+         
+        </section>
+
+          <label for="City" class="shipping-info__sub-heading">City</label>
+          <section class="shipping-info__section">
+            <i class="material-icons shipping-info__icon" id="city-icon">location_city</i>
+            <input type="text" class="shipping-info__text address" id="city" placeholder="City" required>
+          </section> 
+        </section>
+        <section class="country-info">
+         
+          <div class="country-info__container">
+            <label for="country" class="country-info__sub-heading">Country</label>
+            <section class="country-info__section">
+              <i class="material-icons country-info__icon" id="country-icon">public</i>
+              <div class="countries-button"></div>
+              <select id="countries" required>
+                <option value="" hidden>Country</option>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+              </select>
+            </section>
+          </div>
+          
+         
+          <div class="country-info__container">
+            <label for="postal code" class="country-info__sub-heading">Postal Code</label>
+            <section class="country-info__section">
+              <i class="material-icons country-info__icon" id="postal-icon">markunread_mailbox</i>
+              <input type="text" class="country-info__text" id="postal-code" placeholder="Postal Code" required>
+            </section>
+            </div>
+        </section>
+        <section class="save-info">
+          <input type="checkbox" class="save-info__checkbox">
+          <p class="country-info__save-text">Save this information for next time</p>
+        </section>
+        <button type="button" class="order-form__button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="button_top"></span>Countinue</button>
+      </div>
+      
+      <div class="order-form__shopping-cart">
+        <section class="items">
+          
+          <div class="items__item">
+            <div class="zo">
+            <img src="./photo1.png" alt="bag" class="items__item-pic">
+            </div>
+            <section class="items__item-details">
+              <h2 class="items__item-name">Vintage Backbag</h2>
+              <h2 class="items__item-price">$54.99 <span> $94.99</span></h2>
+             
+              <section class="items__item-count">
+                <i class="material-icons" id="minus-icon1">remove</i>
+                <h2 class="items__item-number">1</h2>
+                <i class="material-icons" id="plus-icon1">add</i>
+              </section>
+            </section>
+          </div>
+            
+            <div class="items__item">
+              <div class="zo">
+              <img src="./photo2.png" alt="bag" class="items__item-pic">
+              </div>
+              <section class="items__item-details">
+                <h2 class="items__item-name">Levi Shoes</h2>
+                <h2 class="items__item-price">$74.99 <span> $124.99</span></h2>
+                
+                <section class="items__item-count">
+                  <i class="material-icons" id="minus-icon2">remove</i>
+                  <h2 class="items__item-number">1</h2>
+                  <i class="material-icons" id="plus-icon2">add</i>
+                </section>
+              </section>
+            </div>
+          </section>
+        
+        <section class="order-form__shipping">
+          <h2 class="order-form__shipping-heading">Shipping</h2>
+          <h2 class="order-form__shipping-price">$19</h2>
+        </section>
+        <section class="order-form__total">
+          <h2 class="order-form__total-heading">Total</h2>
+          <h2 class="order-form__total-price">$148.98</h2>
+        </section>
+      </div>
+    </form>
+    <footer class="footer">
+      created by <span><a href="https://github.com/sidxh">Siddhant</a></span> - devChallenges.io
+    </footer>
+  </div>
+  <div class="modal" id="modal">
+    <i class="material-icons" id="close">close</i>
+    <h2>Thank you for your submission</h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
